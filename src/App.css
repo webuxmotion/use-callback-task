@@ -1,0 +1,56 @@
+body {
+  background-color: #1f4287;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter {
+  color: #278ea5;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.button {
+  background-color: #21e6c1;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  color:#071e3d;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hover-zone {
+  border: none;
+  color: #21e6c1;
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #21e6c1;
+  overflow-y: auto;
+  position: relative;
+}
+
+.hover-zone::after {
+  content: '';
+  display: block;
+  height: 500px;
+}
+
+.hover-zone span {
+  position: fixed;
+  pointer-events: none;
+  font-size: 16px;
+}
